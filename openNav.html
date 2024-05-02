@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            width: 500px;
+            height: 42px;
+            background-color: #050;
+            margin: 0 auto;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        li{
+            float: left;
+        }
+
+        nav ul li a{
+            /* p5-15 */
+            padding: 5px 15px;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            line-height: 2;
+            width: 100px;
+            text-align: center;
+            
+        }
+
+        nav ul li a:hover{
+            background-color:orange;
+            color: #050;
+            display: none;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav>ul>li*5>a -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a>
+            <ul>
+            <li>1</li><br>
+            <li>2</li><br>
+            <li>3</li><br>
+            <li>4</li><br>
+            <li>5</li><br>
+            </ul></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
